@@ -1,6 +1,10 @@
+import com.batoulapps.adhan.PrayerTimes;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        PrayerTimes prayerTimes = new PrayerTimes(coordinates, date, params);
+    }
+
 
     }
 }
