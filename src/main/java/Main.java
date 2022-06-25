@@ -6,7 +6,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Test test = new Test();
 
-        System.out.println("Hello New York, Please input information to get prayer times!");
+        System.out.println("Hello Person, Please input information to get prayer times!");
+
+        System.out.println("Please enter your Timezone ID (for example: EST,EMT, PST): ");
+        String ID = scanner.nextLine();
+
+        System.out.println("Please enter your locations latitude: ");
+        double latitude = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Please enter your locations longitude: ");
+        double longitude = Integer.parseInt(scanner.nextLine());
 
         System.out.println("Please enter Month(##): ");
         int month = Integer.parseInt(scanner.nextLine());
@@ -16,7 +25,8 @@ public class Main {
 
         System.out.println("Please enter Year(####): ");
         int year = Integer.parseInt(scanner.nextLine());
-        test.testData(year, month, day);
+        test.testData(year, month, day, latitude, longitude, ID);
+
 
     }
 }
