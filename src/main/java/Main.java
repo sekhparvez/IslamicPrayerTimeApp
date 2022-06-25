@@ -8,13 +8,13 @@ public class Main {
 
         System.out.println("Hello Person, Please input information to get prayer times!");
 
-        System.out.println("Please enter your Timezone ID (for example: EST,EMT, PST): ");
+        System.out.println("Please enter your Timezone ID (for example: GMT-4 for EST): ");
         String ID = scanner.nextLine();
 
-        System.out.println("Please enter your locations latitude: ");
+        System.out.println("Please enter your locations latitude(##): ");
         double latitude = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("Please enter your locations longitude: ");
+        System.out.println("Please enter your locations longitude(##): ");
         double longitude = Integer.parseInt(scanner.nextLine());
 
         System.out.println("Please enter Month(##): ");

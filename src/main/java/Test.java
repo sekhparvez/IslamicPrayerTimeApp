@@ -10,14 +10,13 @@ public class Test {
 
 
 
-                    //Coordinates coordinates = null;
                     CalculationParameters params = CalculationMethod.MUSLIM_WORLD_LEAGUE.getParameters();
                     params.madhab = Madhab.HANAFI;
                     params.adjustments.fajr = +42;
                     params.adjustments.dhuhr = -5;
                     params.adjustments.asr = -83;
                     params.adjustments.maghrib = -12;
-                    params.adjustments.isha = -40;
+                    params.adjustments.isha = -45;
                     Coordinates coordinates = new Coordinates(latitude, longitude);
                     DateComponents dateToday = new DateComponents(year, month, day);
 
